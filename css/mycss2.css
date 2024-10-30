@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    background-color: #3b1d1d;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+header ul li img {
+    vertical-align: middle;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin: 20px 0 40px 0;
+    line-height: 1.6;
+}
+
+/* Контакти вирівняні вліво з підкресленням */
+.contacts {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.contacts h3 {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #3b1d1d;
+    margin-bottom: 15px;
+}
+
+.contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts ul li {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer a img {
+    filter: grayscale(1);
+    transition: filter 0.3s ease;
+}
+
+footer a img:hover {
+    filter: grayscale(0);
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Асортимент та новини</title>
+    <link rel="stylesheet" href="css/mycss3.css">
+    <style>
+        /* Стиль для блоку з новинами */
+        .News {
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        /* Стиль для зображень всередині новин */
+        .News img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        /* Стиль для тексту в блоці новин */
+        .News p {
+            margin: 0;
+            flex: 1;
+        }
+
+        /* Додаткові стилі для заголовків, щоб виглядало схоже */
+        .Webtitle {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .Webtitle img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><img src="images/Logo.png" alt="Logo" height="75px" width="75px"></li>
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="News.html"><span>News</span></a></li>
+            <li><a href="About.html"><span>About us</span></a></li>
+        </ul>
+    </header>
+    
+    <div class="Webtitle">
+        <img src="images/news.png" alt="Icon" height="50px" width="50px">
+        Асортимент та новини
+    </div>
+
+    <article>
+        <div class="Lenta">
+            <div class="News">
+                <img src="images/cool drink.png" alt="Cool Drink">
+                <p><ins>Нове надходження – Слабоалкогольні напої "Ice Drink"</ins><br>
+                <strong>Вид:</strong> Слабоалкогольний коктейль <br>
+                <strong>Марка:</strong> Cool Drink <br>
+                <strong>Виробник:</strong> Cool Drinks Co. <br>
+                <strong>Термін придатності:</strong> до 12 місяців <br>
+                <strong>Постачальник:</strong> ТОВ "Напої плюс" <br>
+                <strong>Ціна:</strong> 45 грн за пляшку (0,5 л) <br>
+                Раді повідомити, що у нашому асортименті з'явився новий продукт – слабоалкогольний напій "Cool Drink". Цей коктейль створений для тих, хто любить насолоджуватися свіжим і легким смаком.</p>
+            </div>
+            
+            <div class="News">
+                <img src="images/cold brew.png" alt="Gold Brew">
+                <p><ins>Новинка – Легкий пивний мікс "Rom Cola"</ins><br>
+                <strong>Вид:</strong> Пивний мікс <br>
+                <strong>Марка:</strong> Gold Brew <br>
+                <strong>Виробник:</strong> Gold Brew Ltd. <br>
+                <strong>Термін придатності:</strong> до 6 місяців <br>
+                <strong>Постачальник:</strong> ТОВ "Напої Україна" <br>
+                <strong>Ціна:</strong> 50 грн за пляшку (0,33 л) <br>
+                Відтепер в нашому асортименті новий вид пивного міксу "Gold Brew", що відомий своєю легкою газованою текстурою та насиченим смаком. Завітайте до нас, щоб спробувати!</p>
+            </div>
+
+            <div class="News">
+                <img src="images/berry fusion.png" alt="Berry Fusion">
+                <p><ins>Знижка на слабоалкогольний напій "Berry Fusion"</ins><br>
+                <strong>Вид:</strong> Слабоалкогольний коктейль <br>
+                <strong>Марка:</strong> Berry Fusion <br>
+                <strong>Виробник:</strong> Berry Drinks LLC <br>
+                <strong>Термін придатності:</strong> до 8 місяців <br>
+                <strong>Постачальник:</strong> ТОВ "Смакові напої" <br>
+                <strong>Ціна:</strong> 40 грн (знижка 10%) за пляшку (0,5 л) <br>
+                Тільки цього місяця діє знижка на слабоалкогольний коктейль "Berry Fusion". Скуштуйте освіжаючий напій за ще більш вигідною ціною!</p>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
