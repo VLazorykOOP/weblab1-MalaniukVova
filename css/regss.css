@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 1.5em;
+}
+
+.sign-in-section {
+    max-width: 500px;
+    margin: auto;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-container {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+form .form-group {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4em;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="password"] {
+    width: 100%;
+    padding: 0.6em;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+
+form .form-group span {
+    font-weight: bold;
+    color: #555;
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gender-group label,
+.gender-group input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form .form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input[type="button"],
+form input[type="reset"] {
+    padding: 0.5em 1.2em;
+    border: none;
+    border-radius: 15px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="button"]:hover,
+form input[type="reset"]:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+}
+
+footer a img {
+    margin: 0 10px;
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+footer a img:hover {
+    transform: scale(1.2);
+}

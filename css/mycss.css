@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,16 +7,17 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5; /* Світлий фон */
-  color: #333; /* Темний текст для кращої читабельності */
-  line-height: 1.6; /* Збільшена висота рядка для кращого сприйняття тексту */
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
   background-color: rgba(36, 0, 0, 0.9);
-  padding: 20px 0; /* Збільшено верхнє та нижнє наповнення */
+  padding: 20px 0;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тінь для підкреслення */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 header ul {
@@ -24,7 +25,7 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px; /* Збільшено відстань між пунктами */
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -36,63 +37,63 @@ header ul li {
 header ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px; /* Зменшено шрифт для навігаційних пунктів */
-  padding: 15px 30px; /* Зменшене наповнення для кнопок */
-  border-radius: 5px; /* Заокруглені кути */
-  transition: background-color 0.3s ease; /* Плавний перехід для фону */
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 header ul li img {
   vertical-align: middle;
-  height: 75px; /* Зменшено розмір логотипу */
+  height: 75px;
   width: 75px;
 }
 
 header ul li a:hover {
   background-color: rgba(60, 0, 0, 0.9);
-  transform: scale(1.05); /* Невеличке збільшення при наведенні */
+  transform: scale(1.05);
 }
 
 .Webtitle {
-  margin: 20px auto; /* Вирівнювання заголовка по центру */
+  margin: 20px auto;
   text-align: center;
-  font-size: 40px; /* Зменшено розмір заголовка */
-  color: rgba(36, 0, 0, 0.9); /* Колір заголовка */
+  font-size: 40px;
+  color: rgba(36, 0, 0, 0.9);
 }
 
 .Product_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Центрування списку продуктів */
-  margin: 30px auto; /* Вирівнювання по центру */
+  justify-content: center;
+  margin: 30px auto;
 }
 
 .Product {
-  border: solid rgba(0, 0, 0, 0.2) 1px; /* Легкий бордер */
-  background-color: #fff; /* Білий фон для продуктів */
-  border-radius: 8px; /* Заокруглені кути */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Тінь для продуктів */
-  margin: 15px; /* Відстань між продуктами */
-  padding: 20px; /* Внутрішнє наповнення */
-  transition: transform 0.3s ease; /* Плавний перехід для анімацій */
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease;
 }
 
 .Product:hover {
-  transform: scale(1.05); /* Невеличке збільшення при наведенні */
+  transform: scale(1.05);
 }
 
 .Product > img {
   height: 200px;
-  width: auto; /* Автоматичне вирівнювання ширини */
-  border-radius: 8px; /* Заокруглені кути для зображення */
+  width: auto;
+  border-radius: 8px;
 }
 
 .Product > a {
   text-decoration: none;
-  color: rgba(36, 0, 0, 0.9); /* Колір назви продукту */
-  font-weight: bold; /* Виділення назви продукту */
-  display: block; /* Блокове вирівнювання */
-  margin-top: 10px; /* Відстань над назвою продукту */
+  color: rgba(36, 0, 0, 0.9);
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
 }
 
 footer {
@@ -104,16 +105,54 @@ footer {
 }
 
 footer a {
-  margin: 0 15px; /* Збільшена відстань між іконками */
+  margin: 0 170px;
   display: inline-block;
 }
 
 footer a img {
   filter: grayscale(1);
-  transition: filter 0.3s ease, transform 0.3s ease; /* Плавний перехід для іконок */
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 footer a img:hover {
   filter: grayscale(0);
-  transform: scale(1.1); /* Невеличке збільшення при наведенні */
+  transform: scale(1.1);
+}
+
+/* Стиль для кнопки профілю */
+.profile-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile-btn {
+  padding: 10px 20px;
+  background-color: rgba(60, 0, 0, 0.9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: rgba(36, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+.table-btn {
+  padding: 10px 20px;
+  background-color: rgba(60, 0, 0, 0.9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.table-btn:hover {
+  background-color: rgba(36, 0, 0, 0.9);
+  transform: scale(1.05);
 }
